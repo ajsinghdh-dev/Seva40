@@ -1,0 +1,30 @@
+{
+  "name": "seva40",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 0.0.0.0 --port 3040",
+    "build": "next build --webpack",
+    "start": "next start --port 3040",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "lucide-react": "0.468.0",
+    "@supabase/ssr": "0.8.0",
+    "@supabase/supabase-js": "2.80.0",
+    "pdf-lib": "1.17.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0",
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
